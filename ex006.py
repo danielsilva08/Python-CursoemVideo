@@ -3,6 +3,6 @@
 n = int(input('Digite o número: '))
 d = n * 2
 t = n * 3
-r = n**(1/2) 
+r = n**(1/2) #Raiz quadrada formula em python 
 
 print(f'O dobro de {n} é {d} \nO triplo de {n} é {t} \nAraiz quadrada de {n} é {r:.1f}')
