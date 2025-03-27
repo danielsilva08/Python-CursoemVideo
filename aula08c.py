@@ -1,3 +1,3 @@
 import emoji
 
-print(emoji.emojize('Globo mostrando a américa :🌎:', language='pt'))
+print(emoji.emojize('Globo mostrando a américa :🌎:', language='alias'))
