@@ -9,4 +9,4 @@ n4 = str(input('Quarto aluno: '))
 
 lista = [n1, n2, n3, n4]
 shuffle(lista) #Para mostrar todos da Lista porém em ordem diferente da digitada. shuffle é embaralhar.
-print(f' O Sortei por orem foi !{lista}.')
+print(f' A ordem de apresentação será!{lista}.')
