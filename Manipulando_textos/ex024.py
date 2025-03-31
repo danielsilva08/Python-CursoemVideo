@@ -3,3 +3,5 @@
 cidade = str(input('Digite o nome da cidade onde voçê nasceu: ')).strip()#elimina os espaços antes e depois mais não entre as palavras
 print(cidade[:5].upper() == 'SANTO')
 
+#.upper = de qualquer jeito que escrever santo ele vai dar true minusula ou maiuscula
+
