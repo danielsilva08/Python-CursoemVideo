@@ -4,4 +4,4 @@ frase = str(input('Digite uma frase: ')).strip().upper()#elimina os espaços ant
 print(f'A letra (A) Aparece {frase.count('A')} vezes na frase.\nA primeira letra (A) apareceu na posição {frase.find('A')+1}\nA letra (A) aparece na ultima vez na posição {frase.rfind('A')+1} ')
 #.count() conta quantas vezes a letra aparece na frase
 #.find()em qual posição aparece a letra primeira vez
-.rfind() em qual posição a letra aprece pela ultima vez. r de right procure do lado direito
+#.rfind() em qual posição a letra aprece pela ultima vez. r de right procure do lado direito
