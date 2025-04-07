@@ -6,13 +6,13 @@ anos = int(input('Em quantos anos voçê pretende pagar ?'))
 prestacao = casa / (anos * 12)
 minimo = salario * 30 / 100
 
-print(f'Para pagar uma casa de {casa} em {anos} anos.')
+print(f'Para pagar uma casa de {casa} em {anos} anos.', end='')
 print(f'a prestação será {prestacao:.2f}')
 
 if prestacao <= minimo:
     print(f'Emprestimo pode ser CONCEDIDO!')
 else:
-    print(f'Emprestimo Negado !')    
+    print(f'Emprestimo NEGADO!')    
     
 
    
