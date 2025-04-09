@@ -8,3 +8,23 @@
 #– Até 25 anos: SÊNIOR
 
 #– Acima de 25 anos: MASTER
+from datetime import date
+atual = date.today().year
+
+nascimento = int(input('Ano de nascimento: '))
+idade = atual - nascimento
+
+if idade <= 9:
+    print(f'Voçê tem {idade} anos. Sua categoria é MIRIM.')
+elif idade <= 14:
+    print(f'Voçê tem {idade} anos. Sua categoria é INFANTIL.')
+elif idade <= 19:  
+    print(f'Voçê tem {idade} anos. Sua categoria é JÚNIOR.') 
+elif idade <= 25:  
+    print(f'Voçê tem {idade} anos. Sua categoria é SÊNIOR.')     
+   
+
+    
+
+
+
