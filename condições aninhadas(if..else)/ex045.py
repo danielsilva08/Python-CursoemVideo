@@ -37,3 +37,6 @@ elif computador == 2:#Jogou tesoura
         print('COMPUTADOR GANHOU!')
     elif jogador == 2:
         print('EMPATE')
+    else:
+        print('JOGADA INVÁLIDA')
+            
