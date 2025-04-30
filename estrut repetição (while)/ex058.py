@@ -5,11 +5,16 @@ computador = randint(0 ,10)
 print('Sou o seu computador..Acabei de pensar em um numeor de 0 a 10.')
 print('Será que você consegue adivinhar? ')
 acertou = False
-jogador = 0
+palpites = 0
 while not acertou:
     jogador = int(input('Qual o seu palpite? '))
-    jogador = jogador + acertou
+    palpites += 1
     if jogador == computador:
         acertou = True
-print(f'Acertou o numero era o {computador}, foram nescessarios {jogador} palpites.')        
+    else:    
+        if jogador < computador:
+            print('Mais...Tente mais uma vez.')
+        elif jogador > computador:
+            print('Menos... Tente mais uma vez.')
+print(f'Acertou o numero era o {computador}, foram nescessarios {palpites} palpites.')        
 
