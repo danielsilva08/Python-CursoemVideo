@@ -4,6 +4,8 @@ while sexo:
     sexo = str(input('Informe o sexo[M/F]: ')).strip().upper()[0]
     if sexo != 'M' and 'F':
         print('Dados invalidos. Por favor, Digite o sexo novamente.')
+    elif sexo == 'M' and 'F':    
+        print(f'sexo {sexo} Registrado com sucesso')        
         
    
       
