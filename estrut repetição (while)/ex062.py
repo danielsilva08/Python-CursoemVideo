@@ -16,3 +16,4 @@ while mais != 0:
         contador += 1
     print('PAUSA')   
     mais = int(input('Quantos termos você quer mostar a mais?' )) 
+print(f'Progressão finalizada com {total} termos mostrados. ')    
