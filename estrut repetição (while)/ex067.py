@@ -4,9 +4,9 @@ while True:
     for c in range(0, 11):
         razao = numero * c
         print(f'{numero} x {c} = {razao}')
-    if numero < 0:
-        break
-print('Encerrando') 
+        if numero < 0:
+                break
+        print('Encerrando') 
 
    
     
