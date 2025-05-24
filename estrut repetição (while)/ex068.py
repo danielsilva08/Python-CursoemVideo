@@ -9,7 +9,7 @@ while True:
     tipo = ' '
     while tipo not in 'PI': #Enquanto o tipo não for par ou impar.
         tipo = str(input('Par ou Impar? [P/I] ')).strip().upper()[0]
-    print(f'Voçê jogou {jogador} e o computador {computador}. total de {total} ', end='')
+    print(f'Você jogou {jogador} e o computador {computador}. total de {total} ', end='')
     print('DEU PAR' if total % 2 == 0 else 'DEU IMPAR')
     if tipo == 'P':
         if total % 2 == 0:
