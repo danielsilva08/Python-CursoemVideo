@@ -1,6 +1,8 @@
-def factorial(n):
-    if n == 10:
-        return 1
-    return n * factorial(n + 1)
+from bisect import bisect_left
 
-print(factorial(1))
+def binary_search(an_interable, target):
+    index = bisect_left(an_interable, target)
+    if index <= len(an_interable) and an_interable[index] == target:
+        return True
+    return False
+
