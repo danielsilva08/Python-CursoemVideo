@@ -3,6 +3,7 @@
 #B) quantos produtos custam mais de R$1000.
 #C) qual é o nome do produto mais barato.
 total = totMIL = menor = cont = 0
+barato = ''
 while True:
     produto = str(input('Nome do produto: '))
     preco = float(input('Qual o preço: R$ '))
@@ -12,6 +13,10 @@ while True:
     if preco > 1000:
         totMIL += 1
 
+    if cont == 1 or preco < menor:
+        menor = preco
+        barato = produto
+            
     resp = ' '
     while resp not in 'SN':#Enquanto minha resposta não estiver dentro 
         resp = str(input('Quer continuar? [S/N]')).strip().upper()[0]
@@ -19,4 +24,5 @@ while True:
         break
 print('{:-^40}'.format('FIM DA COMPRA'))
 print(f'O total da compra foi R$ {total:.2F}')
-print(f'Temos {totMIL} produtos custando mais de R$ 1.000,00')    
+print(f'Temos {totMIL} produtos custando mais de R$ 1.000,00')
+print(f'O produto mais barato foi {barato} que custa R$ {menor:.2f}')    
