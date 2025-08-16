@@ -1,14 +1,31 @@
-from bisect import bisect_left
+#Crie um programa que simule o funcionamento de um caixa eletrônico. No início, pergunte ao usuário qual será o valor a ser sacado (número inteiro) e o programa vai informar quantas cédulas de cada valor serão entregues. OBS: considere que o caixa possui cédulas de R$50, R$20, R$10 e R$1.
 
-def binary_search(an_interable, target):
-    index = bisect_left(an_interable, target)
-    if index <= len(an_interable) and an_interable[index] == target:
-        return True
-    return False
+print('=' * 30)
+print('{:^30}'.format ('BANCO CEV'))
+print('=' * 30)
+valor = int(input('Digite um valor para sacar: R$ '))
+total = valor
+ced = 50
+totalced = 0
 
-sorted_fruits = ['abacate', 'banana', 'laranja', 'maça']
-fruta = 'banana'
+while True:
+    if total >= ced:
+        total -= ced
+        totalced += 1
+    else:
+        if totalced > 0:
+            print(f'Total de {totalced} cedulas de R$ {ced}')
+        if ced == 50:
+            ced = 20
+        elif ced == 20:
+            ced = 10
+        elif ced == 10:
+            ced = 1
+        totalced = 0    
 
-resultado = binary_search(sorted_fruits, fruta)
-print(f"{fruta} está na lista? {resultado}")
+        if total == 0:
+            break 
+print('=' * 30)
+print('Volte sempre ao BANCO CEV!\nTenha um bom dia!')
+print('=' * 30)                      
 
