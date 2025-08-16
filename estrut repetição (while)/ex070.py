@@ -14,7 +14,7 @@ while True:
 
     resp = ' '
     while resp not in 'SN':#Enquanto minha resposta não estiver dentro 
-        resp = int(input('Quer continuar? [S/N]')).strip().upper()[0]
+        resp = str(input('Quer continuar? [S/N]')).strip().upper()[0]
     if resp =='N':
         break
 print('{:-^40}'.format('FIM DA COMPRA'))
