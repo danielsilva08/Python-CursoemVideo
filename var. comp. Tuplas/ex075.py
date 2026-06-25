@@ -10,7 +10,7 @@ numeros = (int(input('Digite o 1º valor: ')),
 print(f'Você digitou os valores: {numeros}')
 print(f'O valor 9 apareceu {numeros.count(9)} vezes.')
 if 3 in numeros:
-    print(f'O primeiro valor 3 foi digitado na posição {numeros.index(3)}.')
+    print(f'O primeiro valor 3 foi digitado na posição {numeros.index(3)+1}.')
 else:
     print('O valor 3 não foi digitado.')
 print('Os números pares digitados foram:', end=' ')
